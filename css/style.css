@@ -1,0 +1,354 @@
+/******** General ********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutralStar {
+    color: var(--main-bg-color)
+}
+
+/******** Header ********/
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+/*     margin: 0px -50px; enlever margin */
+}
+
+.logo {
+    height: 19px;
+    padding: 30px;
+}
+
+.navigation {
+    margin: 0px 25px 0px 25px;
+    width: 244px;
+    display: flex;
+    justify-content: space-between;
+    align-content: start;
+}
+
+.button {
+    border-top: 2px ridge transparent;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    background: none;
+    padding: 15px 0px 0px 0px;
+    margin: 0px;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.button:hover {
+    color: var(--main-color);
+    border-top: 2px ridge var(--main-color);
+}
+
+.button-text {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.button-text:hover {
+    color: var(--main-color);
+}
+
+/******** Recherche ********/
+
+.recherche {
+    display: flex;
+    flex-direction: column;
+    height: 281px;
+    gap: 25px;
+}
+
+.headline {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0px;
+}
+
+.headline p {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0px;
+}
+
+.recherche-bar {
+    height: 49px;
+    width: 377px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.recherche-text {
+    height: 49px;
+    width: 87%;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.recherche-text:focus::placeholder {
+    color: transparent;
+}
+
+.recherche-button {
+    height: 49px;
+    width: 50%;
+    color: var(--filter-bg-color);
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 0px 15px 15px 0px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.recherche-form {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.icon-location {
+    background-color: var(--main-bg-color);
+    width: 13%;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.fa-location-dot {
+    width: 14px;
+    height: 18px;
+    color: black;
+}
+
+.filter {
+    width: 758px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filter h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filter-button {
+    font-size: 17px;
+    font-weight: 700;
+    padding: 4px 19px;
+    gap: 10px;
+    border: 2px solid var(--main-bg-color);
+    border-radius: 25px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filter-button:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.info-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 24px;
+    width: 100%;
+    align-items: center;
+}
+
+.info-bar p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.info-icon {
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/******** Hebergements And Populaires ********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
+}
+
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 134px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards .card {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+}
