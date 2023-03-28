@@ -433,32 +433,9 @@ footer h2 {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /******** Media queries ********/
-/* Responsive texte de la section activités */
-/* @media (max-width: 1440px) {
-    .activites-cards .card-title {
-        font-size: 1.1vw;
-    }
-} */
-
 /* Responsive texte de la section hebergements */
 @media (max-width: 1230px) {
-    .hebergements-cards .card-title {
-        font-size: 1.3vw;
-    }
-
-    .hebergements-cards .card-subtitle {
-        font-size: 1.3vw;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 1.3vw;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 1.3vw;
-    }
-
-    .activites-cards .card-title {
+    .card-title, .card-subtitle {
         font-size: 1.3vw;
     }
 }
